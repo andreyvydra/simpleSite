@@ -72,6 +72,14 @@ class App {
         this.yInput.value = "1";
     }
 
+    setCustomErrorMessageY() {
+        if (this.yInput.valid){
+            this.yInput.setCustomValidity("");
+        } else {
+            this.yInput.setCustomValidity("Введите число с точностью до 6 знаков после запятой");
+        }
+    }
+
     initR(rValue) {
         this.rValue = rValue;
         for (let r = 0; r < this.buttonsR.length; r++) {
@@ -103,7 +111,7 @@ class App {
         let formData = JSON.parse(window.sessionStorage.getItem("formData")) ?? {};
         formData["rValue"] = this.rValue;
         window.sessionStorage.setItem("formData", JSON.stringify(formData));
-        this.changeSelectedButtonR(this.rValue)
+        this.changeSelectedButtonR(this.rValue);
     }
 
     changeSelectedButtonR(rValue) {
