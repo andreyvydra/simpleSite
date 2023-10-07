@@ -1,0 +1,27 @@
+{
+  "name": "phpProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "jquery": "^3.7.1",
+    "simple-notify": "^0.5.5"
+  }
+}

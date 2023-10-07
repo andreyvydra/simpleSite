@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайтик</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="diamond" src="static/img/diamond.webp" alt="Алмаз">
+            <div class="header-info">
+                <h2>Выдра Андрей Михайлович, P3209, 1997</h2>
+            </div>
+            <img class="diamond" src="static/img/diamond.webp" alt="Алмаз">
+        </header>
+        <section>
+            <article class="first-article">
+                <div class="block field">
+                    <img class="field-image" src="static/img/field.png" alt="Поле">
+                </div>
+                <div class="block input">
+                    <form id="form">
+                        <div class="x-input">
+                            X:
+                            <label>
+                                <input name="x" type="radio" value="-3">
+                                <span>-3</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="-2">
+                                <span>-2</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="-1">
+                                <span>-1</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="0">
+                                <span>0</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="1">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="2">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="3">
+                                <span>3</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="4">
+                                <span>4</span>
+                            </label>
+                            <label>
+                                <input name="x" type="radio" value="5">
+                                <span>5</span>
+                            </label>
+                        </div>
+                        <div class="y-input">
+                            <label>Y:
+                                <input type="text" id="y-input" pattern="^\d*([.,]{1}\d{0,6})?$" placeholder="2.999999" required>
+                            </label>
+                        </div>
+                        <div class="r-input">R:
+                            <input class="r" name="r" type="button" value="1">
+                            <input class="r" name="r" type="button" value="1.5">
+                            <input class="r" name="r" type="button" value="2">
+                            <input class="r" name="r" type="button" value="2.5">
+                            <input class="r" name="r" type="button" value="3">
+                        </div>
+                        <input class="submit-button" type="submit" value="Попытаться">
+                    </form>
+                </div>
+            </article>
+            <article class="second-article">
+                <div class="block results">
+                    <table class="table-results">
+                        <thead>
+                            <tr>
+                                <th>Параметры<br>(x, y, r)</th>
+                                <th>Результат</th>
+                                <th>Время выполнения, мс</th>
+                                <th>Дата старта</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="block results">
+                    <h3>Пагинация</h3>
+                    <table class="table-results">
+                        <thead>
+                        <tr>
+                            <th>Параметры<br>(x, y, r)</th>
+                            <th>Результат</th>
+                            <th>Время выполнения, мс</th>
+                            <th>Дата старта</th>
+                        </tr>
+                        </thead>
+                        <tbody id="pagination-table-body">
+
+                        </tbody>
+                    </table>
+                    <div id="pagination-button-container">
+
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>

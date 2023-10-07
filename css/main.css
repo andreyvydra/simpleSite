@@ -1,0 +1,23 @@
+@import "header.css";
+@import "section.css";
+
+@font-face {
+    font-family: "awesome-font";
+    src: url("../static/fonts/minecraft.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "awesome-font", serif;
+    color: whitesmoke;
+}
+
+html, body, .wrapper{
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+}
